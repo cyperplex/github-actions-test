@@ -17,7 +17,6 @@ _Create a GitHub Action and use it in a workflow._
   The start <details> should have `open` as well.
   Do not use quotes on the <details> tag attributes.
 -->
-
 <details id=0>
 <summary><h2>Welcome</h2></summary>
 
@@ -28,7 +27,7 @@ Automation is key for streamlining your work processes, and [GitHub Actions](htt
 - **What you'll build**: An Actions workflow that will check emoji shortcode references in Markdown files.
 - **Prerequisites**: In this course you will work with issues and pull requests, as well as edit files. We recommend you take the [Introduction to GitHub](https://github.com/skills/introduction-to-github) course first.
 - **How long**: This course is five steps long and can be finished in less than two hours.
-
+oc
 ## How to start this course
 
 1. Right-click **Start course** and open the link in a new tab.
