@@ -1,3 +1,4 @@
+name: TestToken
 on: workflow_dispatch
 jobs:
   FailJobIssueDemo:
