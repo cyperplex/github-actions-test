@@ -1,24 +1,12 @@
-name: Caching Primes
-
-on: push
-
+name: VariableDemo
+on: workflow_dispatch
+env:
+  user_name: "Chaminda"
+  demo_name: "Variable Demo"
 jobs:
-  build:
+  VariableUsageJob:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-
-    - name: Cache Primes
-      id: cache-primes
-      uses: actions/cache@v3
-      with:
-        path: prime-numbers
-        key: ${{ runner.os }}-primes
-
-    - name: Generate Prime Numbers
-      if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: /generate-primes.sh -d prime-numbers
-
-    - name: Use Prime Numbers
-      run: /primes.sh -d prime-numbers
+    - name: Using Workflow Variables
+      run: echo Hello, $user_name!
+         Welcome to $demo_name!!!
